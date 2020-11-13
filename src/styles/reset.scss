@@ -1,0 +1,159 @@
+/*
+* by zhangpf
+*/
+
+// 引入 common
+@import './common.scss';
+
+// 引入 覆盖elementUI 样式
+@import './my-elementui.scss';
+
+// 引入 过渡动画
+@import './transition.scss';
+
+* {
+  box-sizing: border-box;
+  user-select:none;  
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+input,
+button,
+textarea,
+p,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption,
+em,
+strong,
+th {
+  font-style: normal;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+input,
+button,
+textarea,
+select {
+  border: none;
+  outline: none;
+  font: 14px/1.4 'Microsoft YaHei', tahoma, arial;
+}
+
+button {
+  cursor: pointer;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+i,
+em {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+html, 
+body {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system-font, BlinkMacSystemFont, 'Helvetica Neue',
+    'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei UI', 'Microsoft YaHei',
+    Arial, sans-serif;
+  font-size: $--font-size;
+  line-height: 1.4;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: 'liga', 'kern';
+  background-color: $--body-bg;
+  color: $--font-color;
+}
+
+pre {
+  font: 14px/1.6 'Microsoft YaHei', tahoma, arial;
+  color: #666;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  *white-space: normal;
+}
+
+
+// 去除input框自动填充内容背景颜色为黄色
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
+}
+
+// 去除IE下默认的文本清除按钮
+input::-ms-clear {
+  display: none;
+}
+input[type='password']::-ms-reveal {
+  display: none;
+}
+
+// input框placeholder样式
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #999;
+} /* WebKit browsers */
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #999;
+} /* Mozilla Firefox 4 to 18 */
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #999;
+} /* Mozilla Firefox 19+ */
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #999;
+} /* Internet Explorer 10+ */
+

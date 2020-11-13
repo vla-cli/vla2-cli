@@ -1,0 +1,77 @@
+// 定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+// 定义滑块 内阴影+圆角
+::-webkit-scrollbar-thumb {
+  border: 1px solid #fff;
+  border-radius: 6px;
+  background: #ddd;
+}
+
+// 左右浮动
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+// 清除浮动
+.clearfix {
+  &:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+  }
+}
+
+// 定义文本不换行，超出省略号
+.nowrap {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.page-container {
+  background-color: $--content-bg;
+}
+
+// textarea禁止拖动
+textarea {
+  resize: none!important;
+}
+
+/*间距*/
+.m-b-20 {
+  margin-bottom: 20px;
+}
+
+.m-l-20 {
+  margin-left: 20px;
+}
+
+.m-r-20 {
+  margin-right: 20px;
+}
+
+.m-t-10 {
+  margin-top: 10px;
+}
+
+.m-t-20 {
+  margin-top: 20px;
+}
+
+.p-20 {
+  padding: 20px
+}
+
+.p-t-20 {
+  padding-top: 20px;
+}
