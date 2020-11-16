@@ -1,6 +1,6 @@
 <template>
   <div class="dashboard">
-    欢迎使用vla-cli脚手架
+    {{$i18n.t('saber.menu.dashboard.content')}}
   </div>
 </template>
 
@@ -15,5 +15,10 @@ export default {
 .dashboard {
   margin-top: 200px;
   text-align: center;
+  letter-spacing: 2.8px;
+  font-size: 40px;
+  color: rgb(64, 201, 198);
+  font-weight: bold;
+  text-shadow: 0 0 1px currentColor,-1px -1px 1px #030,0 -1px 1px #030,1px -1px 1px #030,1px 0 1px #030,1px 1px 1px #030,0 1px 1px #030,-1px 1px 1px #030,-1px 0 1px #030;
 }
 </style>

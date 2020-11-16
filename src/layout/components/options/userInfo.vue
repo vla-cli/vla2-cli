@@ -5,8 +5,8 @@
         <img class="avatar" src="@/assets/avatar.jpg" />
       </span>
       <el-dropdown-menu slot="dropdown">
-        <el-dropdown-item>{{ $t('saber.common.profile') }}</el-dropdown-item>
-        <el-dropdown-item>Github</el-dropdown-item>
+        <!-- <el-dropdown-item>{{ $t('saber.common.profile') }}</el-dropdown-item> -->
+        <el-dropdown-item><a href="https://github.com/vla-cli/vla2-cli" target="_bank">Github</a></el-dropdown-item>
         <el-dropdown-item divided command="logout">{{
           $t('saber.common.logout')
         }}</el-dropdown-item>
