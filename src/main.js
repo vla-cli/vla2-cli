@@ -6,7 +6,6 @@ import { router } from './router'
 import './icons' // icon
 import store from './store'
 import i18n from './locales'
-import './echarts'
 import '@/utils/routerControl'
 
 import ElementUI from 'element-ui'

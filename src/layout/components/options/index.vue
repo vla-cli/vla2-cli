@@ -1,29 +1,17 @@
 <template>
   <div class="options">
-    <search-page />
-    <full-screen />
     <language />
-    <!-- <font-size /> -->
-    <notice />
     <userInfo />
   </div>
 </template>
 
 <script>
-// import fontSize from './fontSize'
-import fullScreen from './fullScreen'
-import notice from './notice'
-import searchPage from './searchPage'
 import userInfo from './userInfo'
 import language from './language'
 
 export default {
   name: 'options',
   components: {
-    // fontSize,
-    fullScreen,
-    notice,
-    searchPage,
     userInfo,
     language
   }

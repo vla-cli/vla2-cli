@@ -57,29 +57,7 @@ export const constantRoutes = [
         component: () => import('@/views/dashboard'),
         name: 'Dashboard'
       },
-      {
-        path: '/guide',
-        meta: {
-          hasAuth: 1,
-          cType: 2,
-          cName: window.i18n.t('saber.menu.guide'),
-          icon: 'guide'
-        },
-        component: () => import('@/views/guide'),
-        name: 'Guide'
-      },
-      ...routerArray,
-      {
-        path: '/share',
-        meta: {
-          hasAuth: 1,
-          cType: 2,
-          cName: window.i18n.t('saber.menu.share.name'),
-          icon: 'guide'
-        },
-        component: () => import('@/views/share'),
-        name: 'Share'
-      }
+      ...routerArray
     ]
   }
 ]

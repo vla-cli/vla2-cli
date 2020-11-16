@@ -8,7 +8,7 @@ module.exports = {
       'vue/dist/vue.esm.js',
       'vue-router',
       // 'element-ui', // dll打包后table无法显示
-      'echarts',
+      // 'echarts',
       'mockjs',
       'vuex',
       'vue-i18n/dist/vue-i18n.esm.js',

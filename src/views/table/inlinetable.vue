@@ -79,13 +79,6 @@ export default {
       ]
     }
   },
-  // created() {
-  //   var arr = [3, 9, 4, 3, 6, 0, 9]
-  //   var sum = arr.reduce(function(prev, cur) {
-  //     return prev + cur
-  //   }, 0)
-  //   console.log('sum', sum)
-  // },
   methods: {
     handelConfirm(row) {
       row.desc = row.inputCont
