@@ -25,15 +25,17 @@ router.beforeEach((to, from, next) => {
   if (hasToken) {
     // 存取面包屑路由数据
     if (!to.meta.filter) {
+      // 当路由中的hasAuth为0，代表改路由没有权限访问，直接进入404页面
+      if (to.meta.hasAuth === 0) {
+        next({ path: '/404' })
+      }
       mapFunc(routerList, to.path)
-      // console.log('idx', idx.split(''))
       let arr = idx.split('')
       let newArr = []
       arr.reduce((prev, cur) => {
         newArr.push(prev[cur])
         return prev[cur]['children']
       }, routerList)
-      // console.log('newArr', newArr)
       store.commit('app/setBreadcrumbList', newArr)
     } else {
       // 初始化
@@ -44,10 +46,7 @@ router.beforeEach((to, from, next) => {
       next({ path: '/' })
     } else {
       // determine whether the user has obtained his permission roles through getInfo
-      const hasRoles = true
-      if (hasRoles) {
-        next()
-      }
+      next()
     }
   } else {
     /* has no token */

@@ -2,7 +2,7 @@
   <div class="logo clearfix">
     <div class="logo-item fl" :class="logoName">
       <img class="logo-img" src="@/assets/logo.png" alt="logo" />
-      <span class="logo-title">ADMIN</span>
+      <span class="logo-title">VLACLI</span>
     </div>
     <div class="fl logo-list">
       <svg-icon icon-class="list" :class="animateName" @click.native="handleClick" />

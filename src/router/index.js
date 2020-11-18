@@ -40,6 +40,11 @@ export const constantRoutes = [
     component: () => import('@/views/404')
   },
   {
+    path: '/404',
+    meta: { filter: true },
+    component: () => import('@/views/404')
+  },
+  {
     path: '/',
     component: Layout,
     redirect: '/dashboard',
